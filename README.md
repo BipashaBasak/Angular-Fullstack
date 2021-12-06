@@ -1,4 +1,4 @@
-##MyPractiseApp
+**MyPractiseApp**
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 
@@ -10,16 +10,20 @@ This is a full-stack application which runs Angular in front-end and PHP in the 
 **1. User's Perspective**
 
    **Registration Form:** The registration page asks users to enter their Name, Contact Number, Password and Confirm Password to make an entry or to create an account. 
+   
    **Login Form:** Once the user has created his/her own account after clicking the ‘Register’ button, then he/she will be redirected to his/her login page to login into his/her 
                        Dashbord/Home Page.
+                       
    **Home Screen (Activity Lists):** The Home page allows users to perform a Create , Read, Update and Delete operations of their day to day activity list.
-   **Logout:** Once the user has logged out of his account, if he/she wants to go into his account again, he/she can login his account, instead of register his account again.
+   
+   **Logout:** Once the user has logged out of his/her account, if he/she wants to go into his account again, he/she can login his account, instead of register his account        again.
+   
 
 **2. Developer's Perspective**
 
-     **-Database** : users data and their activity lists , this all data are stored in MySQL database. 
+     -Database : users data and their activity lists , this all data are stored in MySQL database. 
 
-     **-APIs :**
+     -APIs :
            Registration API
            Login API
            Add User Activity API
