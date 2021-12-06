@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This is a full-stack application which runs Angular in front-end and PHP in the back-end and stored the data in MySQL database.
 
 **Project Framework**
-1. User's Perspective
+**1. User's Perspective**
    Registration Form: The registration page asks users to enter their Name, Contact Number, Password and Confirm Password to make an entry or to create an account. 
    Login Form: Once the user has created his/her own account after clicking the ‘Register’ button, then he/she will be redirected to his/her login page to login into his/her 
                        Dashbord/Home Page.
