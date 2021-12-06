@@ -1,0 +1,26 @@
+
+<h2><span class="badge bg-dark">Register Page</span></h2><br>
+
+<form [formGroup]="registerForm" (ngSubmit)="registerSubmit(registerForm)">
+    <h3>Register Form</h3><br>
+    Name: <input type="text" formControlName="name">
+    <span *ngIf="registerForm.get('name').invalid && submitForm" style="color: rgb(240, 4, 142);"> Please enter a valid name</span><br><br>
+    
+    Phone Number: <input type="phoneNumber" formControlName="phoneNumber">
+    <span *ngIf="registerForm.get('phoneNumber').invalid && submitForm" style="color: rgb(240, 4, 142);">*Please enter a valid phoneNumber</span><br><br>
+
+    Password: <input type="password" formControlName="password">
+    <span *ngIf="registerForm.get('password').invalid && submitForm" style="color: rgb(240, 4, 161);">*Please enter a valid password</span><br><br>
+
+    Confirm Password: <input type="confirmPassword" formControlName="confirmPassword">
+    <span *ngIf="registerForm.get('confirmPassword').invalid && submitForm" style="color: rgb(240, 4, 201);">*Please enter a valid password</span><br><br>
+
+   
+    <button type="submit" class="btn btn-info">Register</button>
+
+</form>
+
+<br>
+<h6>Already have an Account</h6>
+<br>
+<a routerLink ="" class="btn btn-outline-primary" role="button" data-bs-toggle="button">Sign-in</a>

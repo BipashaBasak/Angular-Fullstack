@@ -1,0 +1,21 @@
+<h3><span class="badge bg-secondary">Login Page</span></h3><br>
+
+
+<form [formGroup]="loginForm" (ngSubmit)="loginSubmit(loginForm)">
+    <h4>Please sign in</h4><br>
+
+    Phone Number: <input type="phoneNumber" formControlName="phoneNumber">
+    <span *ngIf="loginForm.get('phoneNumber').invalid && submitForm" style="color: rgb(240, 4, 63);">*Please enter a
+        valid phoneNumber</span><br><br>
+
+    Password: <input type="password" formControlName="password">
+    <span *ngIf="loginForm.get('password').invalid && submitForm" style="color: rgb(240, 4, 63);">*Please enter a valid
+        password</span><br><br>
+
+
+    <button type="submit" class="btn btn-primary">Sign-in</button>
+
+</form>
+
+<br><br>
+<a routerLink="register" class="btn btn-outline-success" role="button" data-bs-toggle="button">Create New Account</a>
